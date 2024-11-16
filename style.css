@@ -1,0 +1,472 @@
+html{
+    padding: 0%;
+    margin: 0%;
+    width: 100vw;
+    background: linear-gradient(90deg,#0d060e, #240087);
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    height: 0;
+    transform-style: preserve-3d;
+    perspective: 1px;
+    overflow-x: hidden;
+    background: linear-gradient(90deg,#0d060e, #240087);
+}
+
+.home {
+    width: 100vw;
+    height: 104vh;
+    background: linear-gradient(90deg,#0d060e, #240087);
+    /* transform: translateZ(-2px) scale(2.5); */
+    position: unset;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+    top: 65vh;
+  }
+  .heading h1{
+    color: aliceblue;
+    background: solid black 4px;
+    font-size: 20vw;
+    position: absolute;
+    top: -20vh;
+    font-family: cursive;
+    font-style: italic;
+    z-index: 1;
+  }
+  h1{
+    animation: pinlitch 2s  3s infinite forwards ease-in;
+  }
+  @keyframes pinlitch {
+    0%, 50% {
+      opacity: 1;
+      text-shadow: 0 0 10px rgb(254, 127, 254), 
+                  0 0 20px rgb(42, 255, 195),
+                  0 0 30px rgb(104, 53, 255);
+    }
+    10%, 100% {
+      opacity: 1;
+      text-shadow: 0 0 20px rgb(254, 127, 254), 
+                  0 0 40px rgb(255, 42, 42),
+                  0 0 60px rgb(251, 53, 255);
+    }
+    20%, 80% {
+      opacity: 1;
+      text-shadow: 0 0 15px rgb(254, 127, 127), 
+                  0 0 30px rgb(252, 42, 255),
+                  0 0 45px rgb(63, 53, 255);
+    }
+    70% {
+      opacity: 1;
+      text-shadow: 0 0 25px rgb(254, 127, 254), 
+                  0 0 50px rgb(245, 245, 245),
+                  0 0 75px rgb(233, 229, 233);
+    }
+    }
+    
+   .box1{
+    width: 100%;
+    transform: translateY(10vh);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    top: 2vh;
+    
+  } 
+  .stand2 {
+   
+    box-shadow: 0 0 100px rgb(117, 231, 235), 0 0 120px rgb(0, 224, 254), 0 0 100px rgb(11, 210, 255);
+    animation: skyglitch 1.5s infinite alternate;
+    width: 50vw;
+    height: 85vh;
+    border-radius: 50%;
+  }
+    .stand1 {
+  
+      box-shadow: 0 0 150px rgb(254, 127, 254), 0 0 120px rgb(252, 42, 255), 0 0 130px rgb(251, 53, 255);
+      animation: pinkglitch 1.5s infinite alternate;
+      width: 80vw;
+      height: 90vw;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 0;
+    }
+  @keyframes load {
+  0%{
+    width: 0;
+    background-color:#ffffff;
+  }
+  70%{
+    width: 100%;
+    background-color: rgb(47, 213, 29);
+  }
+  100%{
+    background-color: #00000000;
+  
+  }
+  }
+  @keyframes transparent {
+    0%{
+      height: 1.5vh;
+    width: 60vw;
+  
+    border: solid #40b4f1 2px;
+   border-radius: 40px;
+    }
+    70%{
+      height: 1.5vh;
+    width: 60vw;
+  
+    border: solid #40b4f1 2px;
+   border-radius: 40px;
+   
+    }
+    100%{
+      border: solid #40b3f100 2px;
+      
+    }
+  
+  }
+  
+  
+  @keyframes pinkglitch {
+  0%, 50% {
+    opacity: 0.2;
+    box-shadow: 0 0 10px rgb(254, 127, 254), 
+                0 0 20px rgb(252, 42, 255),
+                0 0 30px rgb(251, 53, 255);
+  }
+  10%, 100% {
+    opacity: 1;
+    box-shadow: 0 0 20px rgb(254, 127, 254), 
+                0 0 40px rgb(252, 42, 255),
+                0 0 60px rgb(251, 53, 255);
+  }
+  20%, 80% {
+    opacity: 0.5;
+    box-shadow: 0 0 15px rgb(254, 127, 254), 
+                0 0 30px rgb(252, 42, 255),
+                0 0 45px rgb(251, 53, 255);
+  }
+  70% {
+    opacity: 0.8;
+    box-shadow: 0 0 25px rgb(254, 127, 254), 
+                0 0 50px rgb(252, 42, 255),
+                0 0 75px rgb(251, 53, 255);
+  }
+  }
+  
+  @keyframes lack {
+    0%{
+      opacity: 1;
+      background:rgb(0, 0, 0);
+    }
+    50%{
+      opacity: 0;
+      background:rgb(0, 0, 0);
+    }
+    75%{
+      opacity: 1;
+      background:rgba(0, 0, 0, 0.64);
+    }
+    100%{
+      background:rgba(0, 0, 0, 0);
+      opacity: 1;
+      color: #12ef3700;
+    }
+  }
+  /* Glitch animation */
+   @keyframes skyglitch {
+    0%, 100% {
+      opacity: 0.2;
+      box-shadow: 0 0 10px rgb(117, 231, 235), 
+                  0 0 20px rgb(0, 224, 254),
+                  0 0 30px rgb(11, 210, 255);
+    }
+    10%, 70% {
+      opacity: 1;
+      box-shadow: 0 0 20px rgb(117, 231, 235), 
+                  0 0 40px rgb(0, 224, 254),
+                  0 0 60px rgb(11, 210, 255);
+    }
+    20%, 80% {
+      opacity: 0.5;
+      box-shadow: 0 0 15px rgb(117, 231, 235), 
+                  0 0 30px rgb(0, 224, 254),
+                  0 0 45px rgb(11, 210, 255);
+    }
+    50% {
+      opacity: 0.8;
+      box-shadow: 0 0 25px rgb(117, 231, 235), 
+                  0 0 50px rgb(0, 224, 254),
+                  0 0 75px rgb(11, 210, 255);
+    }
+  }
+/* //////////////////////////////////////////////////////////////////////// */
+.robo {
+    /* z-index: 0;  */
+    /* transform: translateZ(-1px) scale(2,2); */
+    background-color: #0098ea00;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    top: -207vh;
+    overflow-x: hidden;
+  }
+  .rocover{
+    width: 50vw;
+    height: 50vh;
+    background-color: #ffccfe00;
+    z-index: -1;
+  }
+  .one{
+    position: absolute;
+    z-index: 0;
+    top: 50vh;
+  }
+  .two{
+    position: absolute;
+    z-index: 1;
+    top: 50vh;
+  }
+  .image {
+   width: 100%;
+   height: 100%;
+  }
+  
+  /* Image fade animation for seamless transition */
+  @keyframes fadeCycle {
+    0%, 25% {
+      opacity: 1;
+    }
+    26%, 27% {
+      opacity: 0; /* First blink */
+    }
+    28%, 29% {
+      opacity: 1; /* Back to visible */
+    }
+    30%, 31% {
+      opacity: 0; /* Second blink */
+    }
+    32%, 100% {
+      opacity: 0; /* Fade out */
+    }
+  }
+  
+  /* First image */
+  .first-image {
+    animation: fadeCycle 5s infinite;
+    animation-delay: 0s;
+  } 
+  
+  /* Second image */
+  .second-image {
+    animation: fadeCycle 5s infinite;
+    animation-delay: 2.30s;
+  }  
+    
+  
+  /* /////////////////////////////////////////////////////////// */
+
+  .marquee-container {
+    height: 100vh;
+    width: 99vw;
+    margin-top: 60px;
+ 
+    overflow-x: hidden;
+    background-color: #004d4300;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    transform: translateZ(-1px) translateY(-10px) scale(2,1);
+    color: #81fafc;
+    display: flex;
+    align-items: end;
+    position: relative;
+    top: -50vh;
+  }
+  
+  .marquee-wrapper {
+    width: 99vw;
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    border-top: 0.5px solid rgba(255, 0, 0, 0);
+    height: 40vh;
+  }
+  
+  .marquee-text {
+    font-family: "Neue_Montreal", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 22vh;
+    letter-spacing: -0.05em;
+    line-height: 1;
+
+    animation: marqueeAnimation 8s linear infinite;
+    
+  }
+  
+  @keyframes marqueeAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  /* .second-page{
+    height: 100vh;
+    width: 100vw;
+    background: #00000069;
+    position: fixed;
+    top: 100vh;
+    background: linear-gradient(90deg,#0d060e, #240087);
+  
+    justify-content: center;
+  } */
+  .hold{
+    width: 100vw;
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: start; */
+    align-items: center;
+    border-radius: 10px;
+    height: 50vh;
+    position: relative;
+    bottom: 210vh;
+   
+  }
+  .covers{
+    background: linear-gradient(90deg,#0d060e, #240087);
+  }
+  .logo-container{
+    width: 100vw;
+    display: flex;
+    background: black;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    
+  }
+  .head2{
+    margin-top: 5vw;
+    color: aliceblue;
+    background: solid black 4px;
+    font-size: 4vw;
+    font-family: cursive;
+    font-style: italic;
+    transform: translateZ(-2px);
+  }
+  .contain{
+    width: 25vw;
+    height: 25vw;
+    background:#f1f14000;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+  
+    text-shadow: 0 0 10px rgb(127, 254, 207), 0 0 20px rgb(252, 42, 255),
+    0 0 30px rgb(147, 53, 255);
+    animation: tailitch 1.5s infinite alternate;
+    border-radius: 50%;
+  
+  }
+  .phonix{
+    scale: 1.2;
+  }
+  
+  @keyframes tailitch {
+    0%, 50% {
+      opacity: 1;
+      text-shadow: 0 0 10px rgb(254, 127, 254), 
+                  0 0 20px rgb(42, 255, 195),
+                  0 0 30px rgb(104, 53, 255);
+    }
+    10%, 100% {
+      opacity: 1;
+      text-shadow: 0 0 20px rgb(254, 127, 254), 
+                  0 0 40px rgb(255, 42, 42),
+                  0 0 60px rgb(251, 53, 255);
+    }
+    20%, 80% {
+      opacity: 1;
+      text-shadow: 0 0 15px rgb(254, 127, 127), 
+                  0 0 30px rgb(252, 42, 255),
+                  0 0 45px rgb(63, 53, 255);
+    }
+    70% {
+      opacity: 1;
+      text-shadow: 0 0 25px rgb(254, 127, 254), 
+                  0 0 50px rgb(245, 245, 245),
+                  0 0 75px rgb(233, 229, 233);
+    }
+    }
+  
+     .card-container {
+        background: linear-gradient(90deg,#0d060e, #240087);
+        display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: start; */
+    align-items: center;
+    border-radius: 10px;
+    height: 100vh;
+    /* position: relative;
+    bottom: 160vh; */
+    padding-top: 10vh;
+    overflow: scroll;
+
+      }
+      .cards {
+        min-width: 20vw;
+        height: 20vh;
+        background: linear-gradient(131deg, #001988, #950096);
+        padding: 2vw;
+        border: 2px solid #ddd;
+        border-radius: 2vw;
+        transition: transform 0.3s;
+        cursor: pointer;
+        text-decoration: none; 
+        box-shadow: 0 0 100px rgb(255, 255, 255);
+        margin: 2vw;
+      }
+      
+     
+.cards:hover{
+    box-shadow: 0 0 100px rgb(255, 255, 255), 0 0 120px rgb(141, 242, 255), 0 0 100px rgb(11, 210, 255);
+  }
+  
+      
+      .card-name h2 {
+        font-size: 1.8vw;
+        color: #ffffff; 
+    }
+      
+      .card-name p {
+        font-size: 1.5vw;
+        color: #ffffff; 
+        margin: 5px 0;
+      }
+       
+      
+      /* Responsive Styling */
+     
+   

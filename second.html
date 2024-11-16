@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robo</title>
+  <!-- Include Locomotive Scroll CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.0.0/dist/locomotive-scroll.min.css">
+  <style>
+    /* You can add any custom styles for images or layout here */
+    .robo {
+      display: flex;
+      flex-direction: column;
+    }
+    .rocover {
+      margin: 20px;
+    }
+    .image {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="robo" data-scroll-container>
+    <!-- Add multiple images to cycle through -->
+    <div class="rocover one" data-scroll>
+      <img class="image first-image" src="src/assets/robo 2.png" alt="Robot 2">
+    </div>
+    <div class="rocover two" data-scroll>
+      <img class="image second-image" src="src/assets/robo.png" alt="Robot 3">
+    </div>
+  </div>
+
+  <!-- Include Locomotive Scroll JS -->
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.0.0/dist/locomotive-scroll.min.js"></script>
+
+  <script>
+    // Initialize LocomotiveScroll after the DOM is loaded
+    document.addEventListener('DOMContentLoaded', function () {
+      const scroll = new LocomotiveScroll({
+        el: document.querySelector('.robo'),
+        smooth: true
+      });
+
+      // Optional: Destroy scroll on window unload or page change to avoid memory leaks
+      window.addEventListener('beforeunload', function () {
+        scroll.destroy();
+      });
+    });
+  </script>
+
+</body>
+</html>

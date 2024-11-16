@@ -1,0 +1,139 @@
+
+@media screen and (max-width:850px){
+    .heading h1{ 
+     margin-top:25vh;
+    }
+    .marquee-container {
+        position: relative;
+        top: -50vh;
+    }  
+   }
+
+@media screen and (max-width: 500px) {
+  
+    .black{
+      width: 100vw;
+    }
+  
+    .load{
+      font-size: 2rem;
+      color: #00fe26;
+    animation: lack .4s 3s forwards cubic-bezier(0, 1.04, 0.89, 0);
+  
+     }
+    .home{
+      width: 100vw;
+      top: 40vh;
+    }
+    .stand1{
+      width: 95vw;
+      height: 85vh;
+      box-shadow: 0 -10px 10px rgb(254, 127, 254), 0 -21px 20px rgb(252, 42, 255), 0 -25px 30px rgb(251, 53, 255);
+    }
+    .stand2{
+      width: 75vw;
+      box-shadow: 0 -10px 10px rgb(117, 231, 235), 0 -20px 20px rgb(0, 224, 254), 0 -30px 30px rgb(11, 210, 255);
+      height: 60vh;position: absolute;
+      bottom: 0%;
+      border-bottom: solid transparent;
+    }
+    .robo {
+      z-index: 2; 
+      transform: translateZ(-1px) scale(2, 2);
+      background-color: #0098ea00;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-content: center;
+      justify-content: center;
+      position: relative;
+      top: -154vh;
+    }
+  
+  .rocover{
+    width: 100%;  
+  }
+  .one{
+    /* position: absolute; */
+    z-index: 0;
+    top: 50vh;
+    scale: 1.1;
+  }
+  .two{
+    /* position: absolute; */
+    z-index: 0;
+    top: 50vh;scale: 1.1;
+  }
+    .first-image {
+      animation: fadeCycle 8s infinite;
+      animation-delay: 0s;
+    }
+    
+    /* Second image */
+    .second-image {
+      animation: fadeCycle 8s infinite;
+       animation-delay: 4s;
+  
+   /*Start midway after first image fades out */
+  
+    }
+    .heading h1{
+      color: aliceblue;
+      background: solid black 4px;
+      position: absolute;
+      top: 0vh;
+      left:15vw;
+      font-style: italic;
+      font-size: 15vw;
+    }
+  
+    .marquee-text {
+      font-family: "Neue_Montreal", sans-serif;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 18vh;
+      letter-spacing: -0.05em;
+      line-height: 1;
+      animation: marqueeAnimation 8s linear infinite;
+    }
+    
+    .hold{
+        position: relative;
+        bottom: 210vh;
+        width: 100vw;
+    }
+  
+    .marquee-container {
+        position: relative;
+        top: -30vh;
+    }    
+  
+  }
+
+  @media screen and (max-width:500px){
+    .head2{
+      font-size: 5vw;
+    }
+    .logo-container{
+      height: 20vh;
+    }
+   
+  }
+
+  @media screen and (max-width: 500px) {
+    .cards {
+      width: 90vw; /* Make the cards smaller on smaller screens */
+        height: fit-content;
+    }
+    .card-name h2 {
+      font-size: 8.2vw; /* Smaller text size for heading */
+    }
+    .card-name p {
+      font-size: 7vw; /* Smaller text size for paragraphs */
+    }
+    .card-name pre {
+      font-size: 7.2vw; /* Smaller font size for preformatted text */
+    }
+  }
