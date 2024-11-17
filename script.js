@@ -18,14 +18,12 @@ const courses = [
 
 // Generate course cards dynamically
 const courseContainer = document.getElementById('course-cards');
-
+const repoName = 'vistaar'; // Your repository name
 courses.forEach(course => {
     const courseLink = document.createElement('a');
-    const repoName = 'vistaar'; 
-courseLink.href = `/${repoName}/${course.title.replace(/\s+/g, '_').toUpperCase()}.html`;
-
-    // courseLink.href = `/${course.title.replace(/\s+/g, '_').toUpperCase()}.html`;
-    // courseLink.classList.add('cards');
+    
+    courseLink.href = `/${repoName}/${course.title.replace(/\s+/g, '_').toUpperCase()}.html`;
+    courseLink.classList.add('cards');
 
     const cardName = document.createElement('div');
     cardName.classList.add('card-name');
