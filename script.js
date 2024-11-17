@@ -21,8 +21,11 @@ const courseContainer = document.getElementById('course-cards');
 
 courses.forEach(course => {
     const courseLink = document.createElement('a');
-    courseLink.href = `/${course.title.replace(/\s+/g, '_').toUpperCase()}.html`;
-    courseLink.classList.add('cards');
+    const repoName = 'vistaar'; 
+courseLink.href = `/${repoName}/${course.title.replace(/\s+/g, '_').toUpperCase()}.html`;
+
+    // courseLink.href = `/${course.title.replace(/\s+/g, '_').toUpperCase()}.html`;
+    // courseLink.classList.add('cards');
 
     const cardName = document.createElement('div');
     cardName.classList.add('card-name');
