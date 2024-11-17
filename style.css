@@ -39,7 +39,7 @@ html{
     z-index: 1;
   }
   h1{
-    animation: pinlitch 2s  3s infinite forwards ease-in;
+    animation: pinlitch 2s  0s infinite forwards ease-in;
   }
   @keyframes pinlitch {
     0%, 50% {
@@ -47,18 +47,6 @@ html{
       text-shadow: 0 0 10px rgb(254, 127, 254), 
                   0 0 20px rgb(42, 255, 195),
                   0 0 30px rgb(104, 53, 255);
-    }
-    10%, 100% {
-      opacity: 1;
-      text-shadow: 0 0 20px rgb(254, 127, 254), 
-                  0 0 40px rgb(255, 42, 42),
-                  0 0 60px rgb(251, 53, 255);
-    }
-    20%, 80% {
-      opacity: 1;
-      text-shadow: 0 0 15px rgb(254, 127, 127), 
-                  0 0 30px rgb(252, 42, 255),
-                  0 0 45px rgb(63, 53, 255);
     }
     70% {
       opacity: 1;
@@ -98,43 +86,6 @@ html{
       justify-content: center;
       z-index: 0;
     }
-  @keyframes load {
-  0%{
-    width: 0;
-    background-color:#ffffff;
-  }
-  70%{
-    width: 100%;
-    background-color: rgb(47, 213, 29);
-  }
-  100%{
-    background-color: #00000000;
-  
-  }
-  }
-  @keyframes transparent {
-    0%{
-      height: 1.5vh;
-    width: 60vw;
-  
-    border: solid #40b4f1 2px;
-   border-radius: 40px;
-    }
-    70%{
-      height: 1.5vh;
-    width: 60vw;
-  
-    border: solid #40b4f1 2px;
-   border-radius: 40px;
-   
-    }
-    100%{
-      border: solid #40b3f100 2px;
-      
-    }
-  
-  }
-  
   
   @keyframes pinkglitch {
   0%, 50% {
@@ -143,18 +94,7 @@ html{
                 0 0 20px rgb(252, 42, 255),
                 0 0 30px rgb(251, 53, 255);
   }
-  10%, 100% {
-    opacity: 1;
-    box-shadow: 0 0 20px rgb(254, 127, 254), 
-                0 0 40px rgb(252, 42, 255),
-                0 0 60px rgb(251, 53, 255);
-  }
-  20%, 80% {
-    opacity: 0.5;
-    box-shadow: 0 0 15px rgb(254, 127, 254), 
-                0 0 30px rgb(252, 42, 255),
-                0 0 45px rgb(251, 53, 255);
-  }
+
   70% {
     opacity: 0.8;
     box-shadow: 0 0 25px rgb(254, 127, 254), 
@@ -163,25 +103,6 @@ html{
   }
   }
   
-  @keyframes lack {
-    0%{
-      opacity: 1;
-      background:rgb(0, 0, 0);
-    }
-    50%{
-      opacity: 0;
-      background:rgb(0, 0, 0);
-    }
-    75%{
-      opacity: 1;
-      background:rgba(0, 0, 0, 0.64);
-    }
-    100%{
-      background:rgba(0, 0, 0, 0);
-      opacity: 1;
-      color: #12ef3700;
-    }
-  }
   /* Glitch animation */
    @keyframes skyglitch {
     0%, 100% {
@@ -190,22 +111,16 @@ html{
                   0 0 20px rgb(0, 224, 254),
                   0 0 30px rgb(11, 210, 255);
     }
-    10%, 70% {
+    0%{
       opacity: 1;
       box-shadow: 0 0 20px rgb(117, 231, 235), 
                   0 0 40px rgb(0, 224, 254),
                   0 0 60px rgb(11, 210, 255);
     }
-    20%, 80% {
-      opacity: 0.5;
-      box-shadow: 0 0 15px rgb(117, 231, 235), 
-                  0 0 30px rgb(0, 224, 254),
-                  0 0 45px rgb(11, 210, 255);
-    }
-    50% {
+    100% {
       opacity: 0.8;
       box-shadow: 0 0 25px rgb(117, 231, 235), 
-                  0 0 50px rgb(0, 224, 254),
+                  0 0 50px rgb(2, 175, 255),
                   0 0 75px rgb(11, 210, 255);
     }
   }
@@ -294,7 +209,7 @@ html{
     display: flex;
     align-items: end;
     position: relative;
-    top: -50vh;
+    top: -70vh;
   }
   
   .marquee-wrapper {
@@ -313,8 +228,7 @@ html{
     font-size: 22vh;
     letter-spacing: -0.05em;
     line-height: 1;
-
-    animation: marqueeAnimation 8s linear infinite;
+    animation: marqueeAnimation 5s linear infinite;
     
   }
   
@@ -327,16 +241,6 @@ html{
     }
   }
 
-  /* .second-page{
-    height: 100vh;
-    width: 100vw;
-    background: #00000069;
-    position: fixed;
-    top: 100vh;
-    background: linear-gradient(90deg,#0d060e, #240087);
-  
-    justify-content: center;
-  } */
   .hold{
     width: 100vw;
     background: black;
@@ -398,18 +302,6 @@ html{
       text-shadow: 0 0 10px rgb(254, 127, 254), 
                   0 0 20px rgb(42, 255, 195),
                   0 0 30px rgb(104, 53, 255);
-    }
-    10%, 100% {
-      opacity: 1;
-      text-shadow: 0 0 20px rgb(254, 127, 254), 
-                  0 0 40px rgb(255, 42, 42),
-                  0 0 60px rgb(251, 53, 255);
-    }
-    20%, 80% {
-      opacity: 1;
-      text-shadow: 0 0 15px rgb(254, 127, 127), 
-                  0 0 30px rgb(252, 42, 255),
-                  0 0 45px rgb(63, 53, 255);
     }
     70% {
       opacity: 1;
